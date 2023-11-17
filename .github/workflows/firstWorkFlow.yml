@@ -6,11 +6,12 @@ on:
 
 jobs:
   firstjob:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - name: firstJob script
         shell: bash
-        run: echo "Hello World" > hellworld.txt
+        run: echo Hello World! This is the first job
+
   secondjob:
     runs-on: ubuntu-latest
     steps:
